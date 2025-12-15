@@ -16,9 +16,9 @@
         <module>events-contract-beautySalon</module>
         <module>beauty-salon-api</module>
         <module>analytics-service-beautySalon</module>
-        <module>beauty-salon</module>
         <module>audit-service-beautySalon</module>
         <module>notification-service-beautySalon</module>
+        <module>beauty-salon</module>
     </modules>
 
     <properties>

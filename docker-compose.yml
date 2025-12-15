@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   jenkins:
     # image: jenkins/jenkins:lts-jdk21   ← закомментируйте или удалите
@@ -118,8 +116,6 @@ services:
       rabbitmq:
         condition: service_healthy
       analytics-service-beautySalon:
-        condition: service_started
-      postgres:
         condition: service_started
     networks:
       - microservices-net
