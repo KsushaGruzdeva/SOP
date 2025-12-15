@@ -17,12 +17,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="analytics-service" options="-parameters" />
-      <module name="audit-service" options="-parameters" />
+      <module name="analytics-service" options="" />
+      <module name="audit-service" options="" />
       <module name="beauty-salon" options="-parameters" />
       <module name="beauty-salon-api" options="-parameters" />
-      <module name="events-contract" options="-parameters" />
-      <module name="notification-service" options="-parameters" />
+      <module name="events-contract" options="" />
+      <module name="notification-service" options="" />
     </option>
   </component>
 </project>
