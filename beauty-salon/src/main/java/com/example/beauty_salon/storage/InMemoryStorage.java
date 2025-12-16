@@ -27,7 +27,7 @@ public class InMemoryStorage {
     public void init() {
         // Создаем несколько услуг
         AccommodationResponse accommodation1 = new AccommodationResponse(accommodationSequence.incrementAndGet(), "Маникюр", Long.parseLong("2500"), LocalDateTime.of(2025, Month.DECEMBER, 25, 18, 30, 0));
-        AccommodationResponse accommodation2 = new AccommodationResponse(accommodationSequence.incrementAndGet(), "Массаж", Long.parseLong("1000"), LocalDateTime.of(2025, Month.DECEMBER, 25, 18, 30, 0));
+        AccommodationResponse accommodation2 = new AccommodationResponse(accommodationSequence.incrementAndGet(), "Массаж", Long.parseLong("100000000"), LocalDateTime.of(2025, Month.DECEMBER, 25, 18, 30, 0));
         accommodations.put(accommodation1.getId(), accommodation1);
         accommodations.put(accommodation2.getId(), accommodation2);
 
