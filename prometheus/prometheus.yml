@@ -6,9 +6,7 @@ scrape_configs:
     metrics_path: "/actuator/prometheus"
     static_configs:
       - targets:
-          [
-            "beauty-salon:8080",
-            "notification-service-beautySalon:8083",
-            "audit-service-beautySalon:8082",
-            "analytics-service-beautySalon:8081",
-          ]
+          - "beauty-salon:8080"
+          - "notification-service-beauty-salon:8083"
+          - "audit-service-beauty-salon:8082"
+          - "analytics-service-beauty-salon:8081"
