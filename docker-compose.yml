@@ -65,7 +65,7 @@ services:
       - microservices-net
 
   # Микросервисы
-  analytics-service-beautySalon:
+  analytics-service-beauty-salon:
     build: ./analytics-service-beautySalon
     ports:
       - "9091:9090" # gRPC порт
@@ -78,7 +78,7 @@ services:
     networks:
       - microservices-net
 
-  notification-service-beautySalon:
+  notification-service-beauty-salon:
     build: ./notification-service-beautySalon
     ports:
       - "8083:8083"
@@ -91,7 +91,7 @@ services:
     networks:
       - microservices-net
 
-  audit-service-beautySalon:
+  audit-service-beauty-salon:
     build: ./audit-service-beautySalon
     ports:
       - "8082:8082"
@@ -115,7 +115,7 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
-      analytics-service-beautySalon:
+      analytics-service-beauty-salon:
         condition: service_started
     networks:
       - microservices-net
