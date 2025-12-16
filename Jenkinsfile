@@ -30,20 +30,20 @@ pipeline {
             }
         }
 
-//         stage('Docker Compose Build') {
-//                     steps {
-//                         script {
-//                             sh 'docker --version'
-//
-//                             sh 'docker compose --version || docker compose version'
-//
-//                             sh 'docker compose -f docker-compose.app.yml down --remove-orphans || true'
-//
-//                             sh 'docker compose -f docker-compose.app.yml build --no-cache'
-//
-//                             sh 'docker compose -f docker-compose.app.yml up -d'
-//                         }
-//                     }
-//         }
+        stage('Docker Compose Build') {
+                    steps {
+                        script {
+                            sh 'docker --version'
+
+                            sh 'docker compose --version || docker compose version'
+
+                            sh 'docker compose -f docker-compose.app.yml down --remove-orphans || true'
+
+                            sh 'docker compose -f docker-compose.app.yml build --no-cache'
+
+                            sh 'docker compose -f docker-compose.app.yml up -d'
+                        }
+                    }
+        }
     }
 }
