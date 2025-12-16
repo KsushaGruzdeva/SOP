@@ -97,7 +97,7 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
-      analytics-service-beautySalon:
+      analytics-service-beauty-salon:
         condition: service_started
     networks:
       - microservices-net
